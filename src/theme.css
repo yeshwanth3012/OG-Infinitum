@@ -1,0 +1,37 @@
+:root {
+  /* Brand navy — matches overseasgateway.com's theme color (#16273D) */
+  --navy-900: #0c1622;
+  --navy-800: #16273d;
+  --navy-700: #1c3350;
+  --navy-600: #274568;
+  --navy-500: #345881;
+
+  /* Accent gold — trust + aspiration, pairs with the navy for a global-education feel */
+  --gold-600: #b78f3a;
+  --gold-500: #c9a24b;
+  --gold-400: #ddb968;
+  --gold-100: #f6ecd6;
+
+  /* Neutrals */
+  --white: #ffffff;
+  --offwhite: #f7f9fc;
+  --gray-100: #eef1f6;
+  --gray-200: #dfe4ec;
+  --gray-400: #93a0b3;
+  --gray-500: #5b6b7f;
+  --gray-700: #33414f;
+  --ink: #16202c;
+
+  --font-heading: 'Poppins', 'Segoe UI', system-ui, sans-serif;
+  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --shadow-sm: 0 2px 10px rgba(22, 39, 61, 0.08);
+  --shadow-md: 0 12px 30px rgba(22, 39, 61, 0.12);
+  --shadow-lg: 0 24px 60px rgba(22, 39, 61, 0.18);
+
+  --container: 1180px;
+}
