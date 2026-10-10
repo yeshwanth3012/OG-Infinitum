@@ -112,13 +112,11 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section">
+      <section className="section sdg-band">
         <div className="container">
           <SectionHeading
-            eyebrow="Indirectly contributing to"
-            title="Sustainable Development Goals and NEP 2020"
+            title="Committed to Student Development, Quality Education and Future-Ready Skills in Alignment with NEP 2020 and the SDGs"
             align="center"
-            subtitle="Alignment with these priorities. OG Infinitum does not claim to achieve a goal or hold a formal partnership."
           />
           <ul className="sdg-row">
             {home.sdgs.map((goal) => (
@@ -129,7 +127,7 @@ export default function Home() {
               </li>
             ))}
             <li className="nep-plate">
-              <span className="nep-plate__mark">NEP</span>
+              <img src="/nep/emblem.png" alt="" width="84" height="84" />
               <strong>2020</strong>
               <span>National Education Policy</span>
             </li>
