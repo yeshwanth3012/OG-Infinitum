@@ -215,7 +215,7 @@ export const pillars = [
     intro: [
       'Knowledge becomes meaningful when it is applied. OG InternX connects learners with internships, industry projects, live experiences, job shadowing opportunities, and experiential learning that bridge the gap between classrooms and careers.',
     ],
-    ctaPrimary: { label: 'Explore Internship Opportunities', to: '/contact' },
+    ctaPrimary: { label: 'Explore Internship Opportunities', to: '/internships' },
     ctaSecondary: { label: 'Become an Industry Partner', to: '/partners' },
     tagListHeading: 'Who It’s For',
     tagList: ['School students exploring careers', 'College students building experience', 'Graduates preparing for employment'],
@@ -234,7 +234,7 @@ export const pillars = [
     closing: {
       heading: 'Where Learning Meets Industry',
       copy: 'Start building real-world experience today.',
-      ctas: [{ label: 'Explore Internship Opportunities', to: '/contact' }, { label: 'Become an Industry Partner', to: '/partners' }],
+      ctas: [{ label: 'Explore Internship Opportunities', to: '/internships' }, { label: 'Become an Industry Partner', to: '/partners' }],
     },
   },
   {

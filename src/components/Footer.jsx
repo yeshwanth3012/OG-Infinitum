@@ -40,6 +40,7 @@ export default function Footer() {
         <div className="site-footer__col">
           <h4>Get Involved</h4>
           <ul>
+            <li><Link to="/internships">Internships</Link></li>
             <li><Link to="/partners">Become a Partner</Link></li>
             <li><Link to="/counsellor-network">Join the Counsellor Network</Link></li>
             <li><Link to="/institutions">For Institutions</Link></li>

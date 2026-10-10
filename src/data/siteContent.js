@@ -10,6 +10,7 @@ export const nav = [
   { label: 'Institutions', to: '/institutions' },
   { label: 'Impact', to: '/impact' },
   { label: 'Resources', to: '/resources' },
+  { label: 'Internships', to: '/internships' },
   { label: 'Contact', to: '/contact' },
 ]
 
@@ -19,6 +20,7 @@ export const footerLinks = [
   { label: 'Impact', to: '/impact' },
   { label: 'Partners', to: '/partners' },
   { label: 'Privacy', to: '/privacy' },
+  { label: 'Internships', to: '/internships' },
   { label: 'Careers', to: '/careers' },
   { label: 'Contact', to: '/contact' },
 ]
@@ -280,7 +282,7 @@ export const contactPage = {
     { label: 'Become a Partner', to: '/partners' },
     { label: 'Become an OG Infinitum Certified Counsellor', to: '/counsellor-network' },
     { label: 'Start Your Career Journey', to: '/pillars/placements' },
-    { label: 'Explore Internship Opportunities', to: '/pillars/internx' },
+    { label: 'Explore Internship Opportunities', to: '/internships' },
     { label: 'Explore Certifications', to: '/pillars/certify' },
     { label: 'Book Your Free Profile Evaluation', to: '/pillars/overseas-gateway' },
   ],
@@ -306,6 +308,38 @@ export const leadershipPage = {
     vision:
       'Make OG Infinitum a name associated with trust, credibility, and genuine service, with integrity guiding every decision, empathy shaping every interaction, and excellence defining every outcome.',
   },
+}
+
+export const internshipPage = {
+  applyEmail: 'enquireus@oginifinitum.com',
+  hero: 'Internships at OG Infinitum',
+  heroSub: 'Paid hybrid internships for students. Review the details and submit your information to apply.',
+  intro:
+    'OG Infinitum offers paid internships to students who want practical experience alongside a student-development team. Interns support live work across programmes, content, outreach, and operations, with time split between online work and on-site sessions.',
+  facts: [
+    { label: 'Type', value: 'Paid' },
+    { label: 'Stipend', value: '₹5,000–₹10,000 per month' },
+    { label: 'Mode', value: 'Hybrid' },
+    { label: 'Duration', value: '3–6 months' },
+  ],
+  youWill: [
+    'Support student programmes, career conversations, and learning resources',
+    'Help with content, communications, and student outreach',
+    'Coordinate with institutions, counsellors, and partners',
+    'Work on live projects with the team, online and on site',
+  ],
+  eligibility: [
+    'Currently enrolled in a college or university, or a recent graduate',
+    'Able to commit for 3 to 6 months',
+    'Able to work in a hybrid setup',
+  ],
+  interests: [
+    'Student programmes and career support',
+    'Content and learning resources',
+    'Outreach and communications',
+    'Operations and coordination',
+    'Institution and partner relations',
+  ],
 }
 
 export const governance = [

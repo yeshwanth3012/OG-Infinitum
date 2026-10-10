@@ -84,6 +84,18 @@ export default function Home() {
         </div>
       </section>
 
+      <section className="section section--tight">
+        <div className="container" style={{ textAlign: 'center' }}>
+          <SectionHeading
+            eyebrow="Internships"
+            title="Paid hybrid internships for students"
+            subtitle="3–6 months · ₹5,000–₹10,000 per month · About 50 interns proposed"
+            align="center"
+          />
+          <Link to="/internships" className="btn btn-primary">View Internships</Link>
+        </div>
+      </section>
+
       <section className="section">
         <div className="container">
           <SectionHeading eyebrow="Aligned With India's Future" title="Contributing To National Priorities" align="center" />

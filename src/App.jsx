@@ -14,6 +14,7 @@ import Contact from './pages/Contact.jsx'
 import Leadership from './pages/Leadership.jsx'
 import Privacy from './pages/Privacy.jsx'
 import Careers from './pages/Careers.jsx'
+import Internships from './pages/Internships.jsx'
 import NotFound from './pages/NotFound.jsx'
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/privacy" element={<Privacy />} />
           <Route path="/careers" element={<Careers />} />
+          <Route path="/internships" element={<Internships />} />
           <Route path="*" element={<NotFound />} />
         </Route>
       </Routes>
