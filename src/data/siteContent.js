@@ -313,9 +313,20 @@ export const leadershipPage = {
 export const internshipPage = {
   applyEmail: 'enquireus@oginifinitum.com',
   hero: 'Internships at OG Infinitum',
-  heroSub: 'Paid hybrid internships for students. Review the details and submit your information to apply.',
+  heroSub:
+    'Our Mission: To create 100,000 internship opportunities for students by 2032, bridging the gap between academic learning and industry experience while enhancing employability and career readiness.',
+  applyTagline: 'Choose your role. Apply once. Start building real experience.',
+  rolesHeading: 'Internship roles at OG Infinitum',
+  roles: [
+    'Web Development Intern',
+    'Digital Marketing Intern',
+    'Business Development Intern',
+    'Graphic Design and Content Creation Intern',
+    'HR Intern',
+    'Content Creators Intern',
+  ],
   intro:
-    'OG Infinitum offers paid internships to students who want practical experience alongside a student-development team. Interns support live work across programmes, content, outreach, and operations, with time split between online work and on-site sessions.',
+    'OG Infinitum offers this internship to college students and to people who want to build skills by doing the work. Interns learn through live projects, online and on site, and develop conversion skills they can use in real outreach, conversations, and student programmes.',
   facts: [
     { label: 'Type', value: 'Paid' },
     { label: 'Stipend', value: '₹5,000–₹10,000 per month' },
@@ -323,22 +334,24 @@ export const internshipPage = {
     { label: 'Duration', value: '3–6 months' },
   ],
   youWill: [
-    'Support student programmes, career conversations, and learning resources',
-    'Help with content, communications, and student outreach',
-    'Coordinate with institutions, counsellors, and partners',
-    'Work on live projects with the team, online and on site',
+    'Upskill through live projects instead of classroom-only practice',
+    'Build conversion skills in real outreach and student conversations',
+    'Support programmes, content, and partner coordination',
+    'Work with the team online and on site',
   ],
   eligibility: [
-    'Currently enrolled in a college or university, or a recent graduate',
+    'College students',
+    'People who want to upskill through a practical approach',
     'Able to commit for 3 to 6 months',
     'Able to work in a hybrid setup',
   ],
   interests: [
-    'Student programmes and career support',
-    'Content and learning resources',
-    'Outreach and communications',
-    'Operations and coordination',
-    'Institution and partner relations',
+    'Web Development Intern',
+    'Digital Marketing Intern',
+    'Business Development Intern',
+    'Graphic Design and Content Creation Intern',
+    'HR Intern',
+    'Content Creators Intern',
   ],
 }
 

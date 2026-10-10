@@ -67,6 +67,24 @@ export default function Internships() {
 
       <section className="section">
         <div className="container">
+          <SectionHeading
+            eyebrow="Open roles"
+            title={internshipPage.rolesHeading}
+            subtitle="Who can apply for this: college students, and people who want to upskill through a practical approach, including conversion skills."
+            align="center"
+          />
+          <div className="grid grid-3">
+            {internshipPage.roles.map((role) => (
+              <a key={role} href="#apply" className="card" style={{ textAlign: 'center' }}>
+                <h3 className="card__title" style={{ marginBottom: 0 }}>{role}</h3>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="section section--offwhite">
+        <div className="container">
           <SectionHeading eyebrow="Internship details" title="What this internship offers" />
           <p style={{ maxWidth: 760 }}>{internshipPage.intro}</p>
           <div className="grid grid-3" style={{ marginTop: 28 }}>
@@ -84,7 +102,7 @@ export default function Internships() {
         </div>
       </section>
 
-      <section className="section section--offwhite">
+      <section className="section">
         <div className="container two-col">
           <div>
             <SectionHeading eyebrow="The work" title="What interns do" />
@@ -106,9 +124,8 @@ export default function Internships() {
       </section>
 
       <section className="section" id="apply">
-        <div className="container two-col">
-          <div>
-            <SectionHeading eyebrow="Apply" title="Submit your details" subtitle="Applications are sent to the OG Infinitum internship team." />
+        <div className="container" style={{ maxWidth: 820 }}>
+            <SectionHeading eyebrow="Apply" title="Submit your details" subtitle={internshipPage.applyTagline} />
             {status === 'sent' ? (
               <div className="note-panel">
                 <h3>Application received</h3>
@@ -151,9 +168,9 @@ export default function Internships() {
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="intern-interest">Area of interest</label>
+                  <label htmlFor="intern-interest">Role</label>
                   <select id="intern-interest" name="interest" required defaultValue="">
-                    <option value="" disabled>Select an area</option>
+                    <option value="" disabled>Select a role</option>
                     {internshipPage.interests.map((item) => (
                       <option key={item} value={item}>{item}</option>
                     ))}
@@ -177,21 +194,6 @@ export default function Internships() {
                 </button>
               </form>
             )}
-          </div>
-
-          <div>
-            <div className="note-panel">
-              <h3>Email your details</h3>
-              <p>
-                You can also write to{' '}
-                <a href={`mailto:${internshipPage.applyEmail}`}>{internshipPage.applyEmail}</a>{' '}
-                with your name, mobile number, college, course and year, city, and the area you want to intern in.
-              </p>
-              <p style={{ marginTop: 16 }}>
-                Paid · ₹5,000–₹10,000 per month · Hybrid · 3–6 months · About 50 interns proposed.
-              </p>
-            </div>
-          </div>
         </div>
       </section>
     </>
