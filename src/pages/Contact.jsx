@@ -19,7 +19,8 @@ export default function Contact() {
       <section className="section">
         <div className="container two-col">
           <div>
-            <SectionHeading eyebrow="Career Discovery" title="Ask CareerX / Start Your Journey" />
+            <SectionHeading eyebrow="Career Discovery" title="Start your journey now !!" />
+            <p className="contact-prompt">Do you want to discover yourself?</p>
             {submitted ? (
               <div className="note-panel">
                 <h3>Thank you!</h3>
@@ -32,37 +33,37 @@ export default function Contact() {
               <form className="contact-form" onSubmit={handleSubmit}>
                 <div className="contact-form__row">
                   <div>
-                    <label htmlFor="name">Name</label>
+                    <label htmlFor="name">Name<span className="contact-form__req" aria-hidden="true">*</span></label>
                     <input id="name" name="name" type="text" required placeholder="Your full name" />
                   </div>
                   <div>
-                    <label htmlFor="class">Class</label>
-                    <input id="class" name="class" type="text" placeholder="e.g. Class 11" />
+                    <label htmlFor="class">Class<span className="contact-form__req" aria-hidden="true">*</span></label>
+                    <input id="class" name="class" type="text" required placeholder="e.g. Class 11" />
                   </div>
                 </div>
                 <div className="contact-form__row">
                   <div>
-                    <label htmlFor="school">School / College</label>
-                    <input id="school" name="school" type="text" placeholder="Your institution" />
+                    <label htmlFor="school">School / College<span className="contact-form__req" aria-hidden="true">*</span></label>
+                    <input id="school" name="school" type="text" required placeholder="Your institution" />
                   </div>
                   <div>
-                    <label htmlFor="city">City</label>
-                    <input id="city" name="city" type="text" placeholder="Your city" />
+                    <label htmlFor="city">City<span className="contact-form__req" aria-hidden="true">*</span></label>
+                    <input id="city" name="city" type="text" required placeholder="Your city" />
                   </div>
                 </div>
                 <div className="contact-form__row">
                   <div>
-                    <label htmlFor="mobile">Mobile Number</label>
+                    <label htmlFor="mobile">Mobile Number<span className="contact-form__req" aria-hidden="true">*</span></label>
                     <input id="mobile" name="mobile" type="tel" required placeholder="10-digit mobile number" />
                   </div>
                   <div>
-                    <label htmlFor="email">Email</label>
+                    <label htmlFor="email">Email<span className="contact-form__req" aria-hidden="true">*</span></label>
                     <input id="email" name="email" type="email" required placeholder="you@example.com" />
                   </div>
                 </div>
                 <div>
-                  <label htmlFor="interest">I'm interested in</label>
-                  <select id="interest" name="interest" defaultValue="">
+                  <label htmlFor="interest">I'm interested in<span className="contact-form__req" aria-hidden="true">*</span></label>
+                  <select id="interest" name="interest" required defaultValue="">
                     <option value="" disabled>Select an option</option>
                     {contactPage.ctaLanguage.map((c) => (
                       <option key={c} value={c}>{c}</option>

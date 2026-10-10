@@ -35,7 +35,7 @@ export default function Internships() {
           Accept: 'application/json',
         },
         body: JSON.stringify({
-          _subject: 'Internship application — OG Infinitum',
+          _subject: 'Internship application. OG Infinitum',
           _template: 'table',
           _captcha: 'false',
           name: data.name,

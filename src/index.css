@@ -95,18 +95,8 @@ button {
   margin-bottom: 14px;
 }
 
-.eyebrow::before {
-  content: '';
-  width: 26px;
-  height: 2px;
-  background: var(--gold-500);
-  display: inline-block;
-}
-
-.section--navy .eyebrow,
-.section--navy .eyebrow::before {
+.section--navy .eyebrow {
   color: var(--gold-400);
-  background: var(--gold-400);
 }
 
 .btn {

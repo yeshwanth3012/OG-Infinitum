@@ -23,28 +23,28 @@
 .site-header__brand {
   display: flex;
   align-items: center;
-  gap: 10px;
-  font-family: var(--font-heading);
 }
 
-.site-header__mark {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  border-radius: 10px;
-  background: var(--navy-800);
-  color: var(--gold-400);
-  font-weight: 800;
-  font-size: 15px;
-  letter-spacing: 0.02em;
-}
-
-.site-header__name {
+.wordmark {
+  font-family: var(--font-mark);
   font-weight: 700;
-  font-size: 19px;
+  font-size: 22px;
+  letter-spacing: 0.14em;
+  line-height: 1;
   color: var(--navy-800);
+}
+
+.wordmark__og {
+  color: var(--gold-600);
+}
+
+.wordmark--on-navy {
+  color: var(--white);
+  font-size: 22px;
+}
+
+.wordmark--on-navy .wordmark__og {
+  color: var(--gold-400);
 }
 
 .site-header__nav {
@@ -100,7 +100,7 @@
   transition: transform 0.2s ease, opacity 0.2s ease;
 }
 
-@media (max-width: 1180px) {
+@media (max-width: 980px) {
   .site-header__toggle {
     display: flex;
   }

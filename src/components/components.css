@@ -27,10 +27,8 @@
   max-width: 780px;
 }
 
-.hero--navy .hero__inner .eyebrow,
-.hero--navy .hero__inner .eyebrow::before {
+.hero--navy .hero__inner .eyebrow {
   color: var(--gold-400);
-  background: var(--gold-400);
 }
 
 .hero__headline {
@@ -359,6 +357,15 @@
   gap: 18px;
 }
 
+.contact-prompt {
+  margin: -18px 0 18px;
+  font-family: var(--font-heading);
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--navy-800);
+}
+
 .contact-form label {
   display: block;
   font-family: var(--font-heading);
@@ -366,6 +373,11 @@
   font-size: 13.5px;
   color: var(--navy-800);
   margin-bottom: 6px;
+}
+
+.contact-form__req {
+  margin-left: 3px;
+  color: var(--gold-600);
 }
 
 .contact-form input,

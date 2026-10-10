@@ -22,8 +22,9 @@
   --gray-700: #33414f;
   --ink: #16202c;
 
-  --font-heading: 'Poppins', 'Segoe UI', system-ui, sans-serif;
-  --font-body: 'Inter', 'Segoe UI', system-ui, sans-serif;
+  --font-mark: 'Times New Roman', Times, 'Liberation Serif', serif;
+  --font-heading: Calibri, 'Segoe UI', Candara, sans-serif;
+  --font-body: Calibri, 'Segoe UI', Candara, sans-serif;
 
   --radius-sm: 8px;
   --radius-md: 14px;

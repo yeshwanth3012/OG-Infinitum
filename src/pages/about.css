@@ -1,0 +1,156 @@
+.container.about-lead {
+  max-width: 720px;
+}
+
+.about-lead .section-heading {
+  margin-bottom: 28px;
+}
+
+.about-lead p {
+  margin-bottom: 16px;
+  font-size: 16.5px;
+  line-height: 1.75;
+}
+
+.about-belief {
+  margin-top: 28px;
+  margin-bottom: 0;
+  padding-top: 24px;
+  border-top: 1px solid var(--gray-200);
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.45;
+  color: var(--navy-800);
+}
+
+.container.about-solution {
+  max-width: 760px;
+}
+
+.about-solution .section-heading {
+  margin-bottom: 8px;
+}
+
+.about-helps {
+  display: grid;
+  max-width: 460px;
+  margin: 8px auto 0;
+}
+
+.about-helps li {
+  padding: 16px 0;
+  border-bottom: 1px solid var(--gray-200);
+  text-align: center;
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.4;
+  color: var(--navy-800);
+}
+
+.container.about-team {
+  max-width: 920px;
+}
+
+.about-team__grid {
+  display: grid;
+  gap: 56px;
+}
+
+.about-team__person {
+  display: grid;
+  grid-template-columns: 156px 1fr;
+  gap: 8px 32px;
+  align-items: start;
+}
+
+.about-team__photo {
+  width: 156px;
+  height: 156px;
+  margin-top: 4px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: center var(--focus, 40%);
+  border: 3px solid var(--gold-500);
+  box-shadow: 0 10px 24px rgba(22, 39, 61, 0.14);
+}
+
+.about-team__role {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+
+.about-team__name {
+  margin: 10px 0 14px;
+  font-family: var(--font-heading);
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--navy-800);
+}
+
+.about-team__copy {
+  margin: 0 0 14px;
+  font-size: 15.5px;
+  line-height: 1.7;
+  color: var(--navy-700);
+}
+
+.about-team__copy:last-child {
+  margin-bottom: 0;
+}
+
+.about-team__more {
+  margin: 36px 0 0;
+  text-align: center;
+}
+
+.about-team__more a {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--navy-800);
+  border-bottom: 1px solid var(--gold-500);
+  padding-bottom: 4px;
+}
+
+.about-team__more a:hover {
+  color: var(--gold-600);
+}
+
+@media (max-width: 720px) {
+  .about-team__person {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .about-team__name {
+    font-size: 22px;
+  }
+}
+
+.about-next {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+
+.about-next a {
+  font-family: var(--font-heading);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--navy-800);
+  border-bottom: 1px solid var(--gold-500);
+  padding-bottom: 4px;
+}
+
+.about-next a:hover {
+  color: var(--gold-600);
+}

@@ -2,6 +2,7 @@ import Hero from '../components/Hero.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
 import CTASection from '../components/CTASection.jsx'
 import { leadershipPage } from '../data/siteContent.js'
+import './leadership.css'
 
 export default function Leadership() {
   const { founder, cofounder } = leadershipPage
@@ -11,26 +12,28 @@ export default function Leadership() {
 
       <section className="section">
         <div className="container">
-          <div className="card" style={{ padding: '40px' }}>
-            <SectionHeading eyebrow={founder.role} title={founder.name} />
-            <p style={{ fontStyle: 'italic', fontSize: 18, color: 'var(--navy-700)', borderLeft: '3px solid var(--gold-500)', paddingLeft: 16 }}>
-              “{founder.quote}”
-            </p>
-            <p>{founder.story}</p>
-            <p>{founder.vision}</p>
-            <p style={{ marginBottom: 0 }}>{founder.mission}</p>
+          <div className="card leader">
+            <img className="leader__photo" src={founder.photo} alt="" style={{ '--focus': founder.photoFocus }} />
+            <div>
+              <SectionHeading eyebrow={founder.role} title={founder.name} />
+              {founder.paragraphs.map((paragraph, index) => (
+                <p key={paragraph} style={{ marginBottom: index === founder.paragraphs.length - 1 ? 0 : undefined }}>{paragraph}</p>
+              ))}
+            </div>
           </div>
         </div>
       </section>
 
       <section className="section section--offwhite">
         <div className="container">
-          <div className="card" style={{ padding: '40px' }}>
-            <SectionHeading eyebrow={cofounder.role} title={cofounder.name} />
-            <p style={{ fontStyle: 'italic', fontSize: 18, color: 'var(--navy-700)', borderLeft: '3px solid var(--gold-500)', paddingLeft: 16 }}>
-              “{cofounder.quote}”
-            </p>
-            <p style={{ marginBottom: 0 }}>{cofounder.vision}</p>
+          <div className="card leader">
+            <img className="leader__photo" src={cofounder.photo} alt="" style={{ '--focus': cofounder.photoFocus }} />
+            <div>
+              <SectionHeading eyebrow={cofounder.role} title={cofounder.name} />
+              {cofounder.paragraphs.map((paragraph, index) => (
+                <p key={paragraph} style={{ marginBottom: index === cofounder.paragraphs.length - 1 ? 0 : undefined }}>{paragraph}</p>
+              ))}
+            </div>
           </div>
         </div>
       </section>

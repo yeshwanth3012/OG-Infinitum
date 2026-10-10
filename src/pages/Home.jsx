@@ -4,6 +4,7 @@ import SectionHeading from '../components/SectionHeading.jsx'
 import PillarCard from '../components/PillarCard.jsx'
 import CTASection from '../components/CTASection.jsx'
 import { home, brand } from '../data/siteContent.js'
+import './home.css'
 
 export default function Home() {
   return (
@@ -15,22 +16,51 @@ export default function Home() {
         ctas={home.hero.ctas}
       />
 
-      <section className="section">
-        <div className="container two-col">
+      <section className="section why-exist">
+        <div className="container why-exist__intro">
+          <span className="eyebrow">{home.why.positioning}</span>
+          <p className="why-exist__mark">OG INFINITUM</p>
+          <h2 className="why-exist__lines">
+            {home.why.statements.map((line) => (
+              <span key={line}>{line}</span>
+            ))}
+          </h2>
+          <p className="why-exist__triad">{home.why.triad}</p>
+          <p className="why-exist__body">{home.why.body}</p>
+        </div>
+
+        <div className="container why-exist__split">
           <div>
-            <SectionHeading eyebrow="Why We Exist" title={home.why.heading} />
-          </div>
-          <div>
-            {home.why.copy.map((p) => (
+            <h3>{home.why.whyTitle}</h3>
+            {home.why.whyCopy.map((p) => (
               <p key={p}>{p}</p>
             ))}
+          </div>
+          <div>
+            <h3>{home.why.problemTitle}</h3>
+            <ol className="problem-list">
+              {home.why.problems.map((item, i) => (
+                <li key={item.title}>
+                  <span>{String(i + 1).padStart(2, '0')}</span>
+                  <div>
+                    <strong>{item.title}</strong>
+                    <p>{item.body}</p>
+                  </div>
+                </li>
+              ))}
+            </ol>
           </div>
         </div>
       </section>
 
       <section className="section section--offwhite">
         <div className="container">
-          <SectionHeading eyebrow="The Learner Journey" title="Discover → Decide → Develop → Experience → Launch → Lead" align="center" subtitle={home.journeySupport} />
+          <SectionHeading
+            eyebrow="The Learner Journey"
+            title="Discover → Decide → Develop → Experience → Launch → Lead"
+            align="center"
+            subtitle="Each stage is powered by one or more of our ecosystem pillars."
+          />
           <div className="divider-flow" style={{ justifyContent: 'center' }}>
             {brand.journey.map((step, i) => (
               <span key={step}>
@@ -44,7 +74,7 @@ export default function Home() {
 
       <section className="section" id="ecosystem">
         <div className="container">
-          <SectionHeading eyebrow="Our Ecosystem" title={home.ecosystemHeading} subtitle={home.ecosystemSubhead} align="center" />
+          <SectionHeading eyebrow="Our Solution" title={home.ecosystemHeading} subtitle={home.ecosystemSubhead} align="center" />
           <div className="grid grid-4">
             {home.cards.map((card, i) => (
               <PillarCard key={card.slug} index={i} {...card} />
@@ -70,20 +100,6 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section section--offwhite">
-        <div className="container">
-          <SectionHeading eyebrow="Measuring What Matters" title="Our Impact, In Progress" align="center" subtitle="We track outcomes across the full learner journey — figures will be published here as they are verified." />
-          <ul className="tag-list" style={{ justifyContent: 'center', display: 'flex' }}>
-            {home.impactCounters.map((c) => (
-              <li key={c}>{c}</li>
-            ))}
-          </ul>
-          <div style={{ textAlign: 'center', marginTop: 28 }}>
-            <Link to="/impact" className="btn btn-outline-dark">See Our Full Impact</Link>
-          </div>
-        </div>
-      </section>
-
       <section className="section section--tight">
         <div className="container" style={{ textAlign: 'center' }}>
           <SectionHeading
@@ -98,11 +114,25 @@ export default function Home() {
 
       <section className="section">
         <div className="container">
-          <SectionHeading eyebrow="Aligned With India's Future" title="Contributing To National Priorities" align="center" />
-          <ul className="tag-list" style={{ justifyContent: 'center', display: 'flex' }}>
-            {home.indiasFuture.map((c) => (
-              <li key={c}>{c}</li>
+          <SectionHeading
+            eyebrow="Indirectly contributing to"
+            title="Sustainable Development Goals and NEP 2020"
+            align="center"
+            subtitle="Alignment with these priorities. OG Infinitum does not claim to achieve a goal or hold a formal partnership."
+          />
+          <ul className="sdg-row">
+            {home.sdgs.map((goal) => (
+              <li key={goal.n}>
+                <img src={goal.icon} alt="" width="84" height="84" />
+                <strong>SDG {goal.n}</strong>
+                <span>{goal.name}</span>
+              </li>
             ))}
+            <li className="nep-plate">
+              <span className="nep-plate__mark">NEP</span>
+              <strong>2020</strong>
+              <span>National Education Policy</span>
+            </li>
           </ul>
         </div>
       </section>
@@ -113,22 +143,6 @@ export default function Home() {
         copy={home.partnerCta.items.join(' · ')}
         ctas={[{ label: 'Become a Partner', to: '/partners' }, { label: 'Explore the Ecosystem', to: '/ecosystem' }]}
       />
-
-      <section className="section section--offwhite">
-        <div className="container">
-          <SectionHeading eyebrow="Resources & Insights" title="Knowledge to Help You Move Forward" align="center" />
-          <div className="grid grid-4">
-            {home.insights.map((item) => (
-              <div className="card" key={item}>
-                <h3 className="card__title">{item}</h3>
-              </div>
-            ))}
-          </div>
-          <div style={{ textAlign: 'center', marginTop: 28 }}>
-            <Link to="/resources" className="btn btn-outline-dark">Visit the Resource Centre</Link>
-          </div>
-        </div>
-      </section>
     </>
   )
 }

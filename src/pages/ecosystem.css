@@ -1,0 +1,71 @@
+.ecosystem-road {
+  overflow-x: auto;
+  margin-top: 12px;
+}
+
+.ecosystem-road__canvas {
+  position: relative;
+  width: 100%;
+  min-width: 920px;
+}
+
+.ecosystem-road__svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.ecosystem-road__band {
+  fill: none;
+  stroke: var(--navy-800);
+  stroke-width: 14;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.ecosystem-road__stops {
+  position: absolute;
+  inset: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.ecosystem-road__stop {
+  position: absolute;
+  left: var(--x);
+  top: var(--y);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 148px;
+  text-align: center;
+}
+
+.ecosystem-road__stop--above {
+  transform: translate(-50%, -100%);
+}
+
+.ecosystem-road__stop--below {
+  transform: translate(-50%, 0);
+}
+
+.ecosystem-road__stage {
+  font-family: var(--font-heading);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--gold-600);
+}
+
+.ecosystem-road__pillar {
+  margin-top: 2px;
+  font-family: var(--font-heading);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.25;
+  color: var(--navy-800);
+}

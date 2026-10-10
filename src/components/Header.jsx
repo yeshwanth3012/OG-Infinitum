@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react'
 import { Link, NavLink } from 'react-router-dom'
-import { nav, brand } from '../data/siteContent.js'
+import { nav } from '../data/siteContent.js'
 import './header.css'
 
 export default function Header() {
@@ -16,9 +16,8 @@ export default function Header() {
   return (
     <header className={`site-header ${scrolled ? 'is-scrolled' : ''}`}>
       <div className="container site-header__inner">
-        <Link to="/" className="site-header__brand" onClick={() => setOpen(false)}>
-          <span className="site-header__mark">OG</span>
-          <span className="site-header__name">{brand.name}</span>
+        <Link to="/" className="site-header__brand" onClick={() => setOpen(false)} aria-label="OGINFINITUM">
+          <span className="wordmark"><span className="wordmark__og">OG</span>INFINITUM</span>
         </Link>
 
         <nav className={`site-header__nav ${open ? 'is-open' : ''}`}>

@@ -1,7 +1,8 @@
+import { Link } from 'react-router-dom'
 import Hero from '../components/Hero.jsx'
 import SectionHeading from '../components/SectionHeading.jsx'
-import CTASection from '../components/CTASection.jsx'
-import { about } from '../data/siteContent.js'
+import { about, leadershipPage } from '../data/siteContent.js'
+import './about.css'
 
 export default function About() {
   return (
@@ -9,60 +10,58 @@ export default function About() {
       <Hero eyebrow="About OG Infinitum" headline={about.hero} variant="navy" size="md" />
 
       <section className="section">
-        <div className="container two-col">
-          <div>
-            <SectionHeading eyebrow="The Challenge" title="Clarity Is the Real Gap" />
-            <p>{about.coreMessage}</p>
-            <p>{about.problem}</p>
-          </div>
-          <div>
-            <div className="note-panel">
-              <h3>What We Believe</h3>
-              <p>{about.belief}</p>
-            </div>
-          </div>
+        <div className="container about-lead">
+          <SectionHeading eyebrow="The Challenge" title="Clarity Is the Real Gap" />
+          <p>{about.coreMessage}</p>
+          <p>{about.problem}</p>
+          <p className="about-belief">{about.belief}</p>
         </div>
       </section>
 
       <section className="section section--offwhite">
-        <div className="container">
+        <div className="container about-solution">
           <SectionHeading eyebrow="Our Solution" title={about.solution} align="center" />
-          <div className="grid grid-3">
+          <ul className="about-helps">
             {about.weHelp.map((item) => (
-              <div className="card" key={item}>
-                <p style={{ marginBottom: 0, fontFamily: 'var(--font-heading)', fontWeight: 600, color: 'var(--navy-800)' }}>{item}</p>
-              </div>
+              <li key={item}>{item}</li>
             ))}
-          </div>
+          </ul>
         </div>
       </section>
 
       <section className="section">
-        <div className="container two-col">
-          <div>
-            <SectionHeading eyebrow="Why We're Different" title="One Ecosystem, Not Isolated Services" />
-            <p>{about.whyDifferent}</p>
-            <p style={{ fontFamily: 'var(--font-heading)', fontWeight: 700, color: 'var(--navy-800)', fontSize: 20 }}>{about.purpose}</p>
-          </div>
-          <div>
-            <SectionHeading eyebrow="Our Mission" title="Empowering Every Learner" />
-            <p>{about.mission}</p>
-          </div>
-        </div>
-      </section>
-
-      <section className="section section--navy">
-        <div className="container" style={{ textAlign: 'center' }}>
-          <span className="eyebrow">Our Promise</span>
-          <div className="grid grid-3" style={{ marginTop: 20 }}>
-            {about.promiseLines.map((line) => (
-              <h3 key={line} style={{ color: '#fff' }}>{line}</h3>
+        <div className="container about-team">
+          <SectionHeading eyebrow="Leadership" title="The Visionaries" align="center" />
+          <div className="about-team__grid">
+            {[leadershipPage.founder, leadershipPage.cofounder].map((person) => (
+              <article key={person.name} className="about-team__person">
+                <img
+                  className="about-team__photo"
+                  src={person.photo}
+                  alt=""
+                  style={{ '--focus': person.photoFocus }}
+                />
+                <div>
+                  <p className="about-team__role">{person.role}</p>
+                  <h3 className="about-team__name">{person.name}</h3>
+                  {person.paragraphs.map((paragraph) => (
+                    <p key={paragraph} className="about-team__copy">{paragraph}</p>
+                  ))}
+                </div>
+              </article>
             ))}
           </div>
+          <p className="about-team__more">
+            <Link to="/leadership">Read their story</Link>
+          </p>
         </div>
       </section>
 
-      <CTASection heading={about.closing} ctas={[{ label: 'Explore Our Ecosystem', to: '/ecosystem' }, { label: 'Meet Our Leadership', to: '/leadership' }]} />
+      <section className="section section--tight">
+        <div className="container about-next">
+          <Link to="/ecosystem">Explore Our Ecosystem</Link>
+        </div>
+      </section>
     </>
   )
 }

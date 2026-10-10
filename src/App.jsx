@@ -1,4 +1,4 @@
-import { Routes, Route } from 'react-router-dom'
+import { Routes, Route, Navigate } from 'react-router-dom'
 import Layout from './components/Layout.jsx'
 import ScrollToTop from './components/ScrollToTop.jsx'
 import Home from './pages/Home.jsx'
@@ -7,9 +7,6 @@ import Ecosystem from './pages/Ecosystem.jsx'
 import PillarPage from './pages/PillarPage.jsx'
 import Partners from './pages/Partners.jsx'
 import CounsellorNetwork from './pages/CounsellorNetwork.jsx'
-import Institutions from './pages/Institutions.jsx'
-import Impact from './pages/Impact.jsx'
-import Resources from './pages/Resources.jsx'
 import Contact from './pages/Contact.jsx'
 import Leadership from './pages/Leadership.jsx'
 import Privacy from './pages/Privacy.jsx'
@@ -28,10 +25,10 @@ export default function App() {
           <Route path="/ecosystem" element={<Ecosystem />} />
           <Route path="/pillars/:slug" element={<PillarPage />} />
           <Route path="/partners" element={<Partners />} />
+          <Route path="/institutions" element={<Navigate to="/partners" replace />} />
+          <Route path="/impact" element={<Navigate to="/" replace />} />
+          <Route path="/resources" element={<Navigate to="/" replace />} />
           <Route path="/counsellor-network" element={<CounsellorNetwork />} />
-          <Route path="/institutions" element={<Institutions />} />
-          <Route path="/impact" element={<Impact />} />
-          <Route path="/resources" element={<Resources />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/leadership" element={<Leadership />} />
           <Route path="/privacy" element={<Privacy />} />

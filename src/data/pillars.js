@@ -13,7 +13,7 @@ export const pillars = [
       "Every student is unique. You have your own talents, interests, dreams, and way of thinking.",
       "The most important journey you'll ever take isn't choosing a career. It's discovering yourself.",
       "At OG CareerX, we help you understand who you are, what you're naturally good at, what excites you, and how you can build a future that truly fits you.",
-      "Start your journey—not to become someone else, but to discover your best self.",
+      "Start your journey, not to become someone else, but to discover your best self.",
     ],
     ctaPrimary: { label: 'Start My Journey', to: '/contact' },
     ctaSecondary: { label: 'Explore CareerX', to: '#stages' },
@@ -26,9 +26,9 @@ export const pillars = [
     stagesHeading: 'A Four-Stage Journey of Self-Discovery',
     stages: [
       { title: 'Discover Yourself', body: 'Understand your personality, interests, strengths, values, and learning style.', quote: 'The better you know yourself, the better decisions you’ll make.' },
-      { title: 'Understand Your Skills', body: 'Discover strengths in communication, creativity, leadership, reasoning, teamwork, and problem-solving.', quote: 'Everyone has strengths—sometimes they just need the right opportunity to shine.' },
+      { title: 'Understand Your Skills', body: 'Discover strengths in communication, creativity, leadership, reasoning, teamwork, and problem-solving.', quote: 'Everyone has strengths, sometimes they just need the right opportunity to shine.' },
       { title: 'Explore Possibilities', body: 'Learn about careers, industries, and opportunities that align with your interests and skills.', quote: "Don't choose a career because it's popular. Choose one because it suits you." },
-      { title: 'Build Your Future', body: 'Receive a personalized growth plan with recommended skills, learning pathways, activities, and mentorship.', quote: "Your future isn't predicted—it is built." },
+      { title: 'Build Your Future', body: 'Receive a personalized growth plan with recommended skills, learning pathways, activities, and mentorship.', quote: "Your future isn't predicted, it is built." },
     ],
     notExam: {
       heading: "This Isn't an Exam",
@@ -66,7 +66,7 @@ export const pillars = [
     subheadline: 'Building Future-Ready Individuals, One Skill at a Time.',
     intro: [
       'The future belongs to those who never stop learning. Academic knowledge helps you pass examinations. Skills help you succeed in life.',
-      'At OG Skills Hub, we believe every learner has the potential to become confident, capable, and future-ready—not just by acquiring technical knowledge, but by developing the skills and mindset needed to thrive in school, higher education, the workplace, entrepreneurship, and beyond.',
+      'At OG Skills Hub, we believe every learner has the potential to become confident, capable, and future-ready, not just by acquiring technical knowledge, but by developing the skills and mindset needed to thrive in school, higher education, the workplace, entrepreneurship, and beyond.',
     ],
     ctaPrimary: { label: 'Explore Skill Pathways', to: '/contact' },
     ctaSecondary: { label: 'See Capability Zones', to: '#zones' },
@@ -99,7 +99,7 @@ export const pillars = [
     flow: ['Skill Badges', 'Capability Levels', 'Digital Portfolios', 'Project Showcases', 'Mentor Feedback', 'Verified Completion Certificates'],
     note: {
       heading: 'Our Promise',
-      copy: "At OG Skills Hub, our goal isn't simply to help learners acquire more skills. It's to help them become more capable, more confident, and more prepared to create meaningful impact—whether in the classroom, at university, in the workplace, or as future entrepreneurs and leaders.",
+      copy: "At OG Skills Hub, our goal isn't simply to help learners acquire more skills. It's to help them become more capable, more confident, and more prepared to create meaningful impact, whether in the classroom, at university, in the workplace, or as future entrepreneurs and leaders.",
     },
     ecosystemLink: [
       { q: 'Who am I?', a: 'CareerX helps learners answer this.' },
@@ -196,7 +196,7 @@ export const pillars = [
     flow: ['Level 1 – OG Achievement', 'Level 2 – Partner Certifications', 'Level 3 – Career Credentials'],
     note: {
       heading: 'Why OG Certify',
-      copy: 'Curated recommendations, trusted partners, career alignment, and full ecosystem integration — so certifications connect directly to the rest of your journey.',
+      copy: 'Curated recommendations, trusted partners, career alignment, and full ecosystem integration, so certifications connect directly to the rest of your journey.',
     },
     whoCanBenefit: ['School Students', 'College Students', 'Graduates', 'Working Professionals', 'Career Changers', 'Entrepreneurs'],
     closing: {
@@ -247,7 +247,7 @@ export const pillars = [
     intro: [
       'Getting a degree is one milestone. Building a successful career is the next.',
       'OG Placements prepares learners to confidently enter the workforce through employability training, interview preparation, recruiter connections, and placement support.',
-      'Our focus is not just helping learners get jobs—but helping them build meaningful careers.',
+      'Our focus is not just helping learners get jobs, but helping them build meaningful careers.',
     ],
     ctaPrimary: { label: 'Start Your Career Journey', to: '/contact' },
     ctaSecondary: { label: 'Hire Through OG Placements', to: '/contact' },
@@ -308,7 +308,7 @@ export const pillars = [
     name: 'OG Parent Connect',
     tag: 'Family Engagement',
     headline: 'Empowering Parents. Enabling Every Child’s Potential.',
-    subheadline: 'Because Every Child Needs More Than Education—They Need Understanding, Encouragement, and the Right Support at Home.',
+    subheadline: 'Because Every Child Needs More Than Education. They Need Understanding, Encouragement, and the Right Support at Home.',
     intro: [
       'Today’s students are exposed to countless career options, rapidly changing technology, social media, artificial intelligence, global opportunities, and constant academic pressure. For many parents, it can be overwhelming to understand what their child is truly interested in, what they are naturally good at, and how best to support them.',
       'At OG Parent Connect, we help parents become confident partners in their child’s learning and career journey. Because when schools, mentors, and parents work together, students thrive.',

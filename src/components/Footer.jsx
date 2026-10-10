@@ -8,8 +8,7 @@ export default function Footer() {
       <div className="container site-footer__top">
         <div className="site-footer__brand">
           <div className="site-footer__mark-row">
-            <span className="site-header__mark">OG</span>
-            <span className="site-footer__name">{brand.name}</span>
+            <span className="wordmark wordmark--on-navy"><span className="wordmark__og">OG</span>INFINITUM</span>
           </div>
           <p className="site-footer__tagline">{brand.positioning}</p>
           <p className="site-footer__promise">{brand.promise}</p>
@@ -43,8 +42,6 @@ export default function Footer() {
             <li><Link to="/internships">Internships</Link></li>
             <li><Link to="/partners">Become a Partner</Link></li>
             <li><Link to="/counsellor-network">Join the Counsellor Network</Link></li>
-            <li><Link to="/institutions">For Institutions</Link></li>
-            <li><Link to="/resources">Resources & Insights</Link></li>
           </ul>
         </div>
       </div>
